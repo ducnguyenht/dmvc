@@ -18,24 +18,7 @@
 @using(Html.BeginForm("SetCulture", "Home"))
 {
     <fieldset>
-        <legend>@Resources.ChooseYourLanguage</legend>
-        @*<select style="font-family: Arial Unicode MS;">
-            <option>Select Language</option>
-            <option value="ar">Arabic — العربية</option>
-            <option value="bn">Bengali — বাংলা</option>
-            <option value="bg">Bulgarian — български</option>
-            <option value="ca">Catalan — Català</option>
-            <option value="zh_CN">Chinese (Simplified) — 中文（简体）</option>
-            <option value="zh_TW">Chinese (Traditional) — 中文 (繁體)</option>
-            <option value="hr">Croatian — Hrvatski</option>
-            <option value="cs">Czech — čeština</option>
-            <option value="da">Danish — Dansk</option>
-            <option value="nl">Dutch — Nederlands</option>
-            <option value="en" selected="">English</option>
-            <option value="en_GB">English (UK) — English (UK)</option>
-            <option value="fil">Filipino — Filipino</option>
-            <option value="fi">Finnish — suomi</option>
-        </select>*@
+        <legend>@Resources.ChooseYourLanguage</legend>      
         <div class="control-group">
             <div class="controls">
                 <label for="en-us">
@@ -58,14 +41,8 @@
                     <input name="culture" id="ar" value="ar" type="radio" @selected("ar", culture) /> العربية
                 </label>
             </div>
-        </div>
-
-      
-    </fieldset>
-
-       
-    
-    
+        </div>      
+    </fieldset>      
 }
 
 @using (Html.BeginForm()) 
@@ -122,9 +99,7 @@
             </div>
         </div>
     </div>
-}
-
-
+} 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 
